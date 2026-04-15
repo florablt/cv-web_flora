@@ -425,16 +425,44 @@ body::after {
     height: auto;
   }
 
-  .hero-photo {
-    height: 200px;
-  }
-
   .hero-right {
     height: auto;
   }
 
+  .hero-photo {
+    height: auto;
+  }
+
+  .hero-right {
+    display: contents;
+  }
+
+  .hero-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  .hero-photo {
+    grid-column: 1;
+    grid-row: 1;
+    height: 140px;
+  }
+
   .hero-bio {
-    max-height: 120px;
+    grid-column: 2;
+    grid-row: 1;
+    max-height: 140px;
+  }
+
+  .hero-interests {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .hero-photo img {
+    object-position: center 20%;
   }
 
   .bottom-grid {
