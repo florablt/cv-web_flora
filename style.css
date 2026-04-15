@@ -417,3 +417,32 @@ body::after {
 .page > *:nth-child(5) { animation-delay: 0.33s; }
 .page > *:nth-child(6) { animation-delay: 0.40s; }
 .page > *:nth-child(7) { animation-delay: 0.47s; }
+
+@media (max-width: 480px) {
+
+  .hero-row {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .hero-photo {
+    height: 200px;
+  }
+
+  .hero-right {
+    height: auto;
+  }
+
+  .hero-bio {
+    max-height: 120px;
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .name-banner h1 {
+    font-size: 28px;
+    letter-spacing: 0.12em;
+  }
+}
