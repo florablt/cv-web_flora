@@ -427,6 +427,7 @@ body::after {
 
   .hero-photo {
     height: 200px;
+    top: 20%;
   }
 
   .hero-right {
